@@ -52,3 +52,12 @@ basicNN + geom_point(aes(SIMS=ARM))
 ```
 
 Our y-axis is called SIMS and our x-axis is called ARMS. From looking at this scatter plot, there is a positive linear regression occurring between ARM and SIMS.
+
+# Numerical results
+
+  
+```{r}
+cor(SIMS~ARM,data=data)
+```
+
+Our numerical result is a positive number at 0.6860073 which means the linear regression will be postive and move left to right.
