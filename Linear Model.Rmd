@@ -44,3 +44,11 @@ basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
 ```{r}
 basicNN + geom_point()
 ```
+
+###get fancy  
+  
+```{r}
+basicNN + geom_point(aes(SIMS=ARM)) 
+```
+
+Our y-axis is called SIMS and our x-axis is called ARMS. From looking at this scatter plot, there is a positive linear regression occurring between ARM and SIMS.
