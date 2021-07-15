@@ -90,3 +90,7 @@ Every point displayed in the plot is an error. We must take the distance between
 
 The equation formula for a line is y = mx + b
 
+```{r}
+newdata = data.frame(GRIP= 94, ARM = 88)
+predict(model.1, newdata, interval = "confidence")
+```
