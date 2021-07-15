@@ -76,3 +76,17 @@ In this linear regression model, the numbers that should be considered to create
 In the adjusted R Square, the error was reduced by 46%(0.467). The adjusted R Square represents the reduction of the error from the mean model on a percentage basis.
 
 The 145 degrees of freedom is how many data points are displayed in the plot. The line is to be estimate where it hits the y-axis. Each data will change the degree of freedom. Every time you add more stuff to the model, multiple R-squared will down a small percentage 
+
+# now add the model fit to our plot
+
+  
+```{r}
+basicNN + geom_point() + geom_smooth(method=lm)
+``` 
+
+The standard error was 1.226 of each point along the ARM axis, the means of the distribution is where the line falls. The spread of the dots of the standard deviation of that normal distribution. Each pt of the line is a representative of one of the output.
+
+Every point displayed in the plot is an error. We must take the distance between each one of those points and square it. The sum of all errors squared is the average mean error.
+
+The equation formula for a line is y = mx + b
+
